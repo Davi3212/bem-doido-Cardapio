@@ -1,0 +1,38 @@
+VERSÃO CORRIGIDA: o erro que escondia categorias e fotos foi removido.
+
+BEM DOIDO — SITE COM RELATÓRIOS E LOGS
+
+O QUE FOI ADICIONADO
+- Contagem de visitantes e aberturas
+- Cliques no carrinho
+- Categorias abertas
+- Produtos adicionados
+- Cliques para pedir pelo WhatsApp
+- Tentativas corretas e incorretas de acesso ao administrador
+- IP exibido parcialmente, aparelho, cidade/país e horário
+- Bloqueio de 15 minutos após 5 senhas erradas
+- Senha verificada no servidor
+- Troca de senha pelo painel
+- Registros guardados no Netlify Blobs
+
+ATENÇÃO: ESTA VERSÃO NÃO É APENAS UM HTML
+Ela usa Netlify Functions. O envio simples de um único HTML não ativa os relatórios.
+Publique o projeto completo por Git ou Netlify CLI para que o Netlify instale as dependências e crie as funções.
+
+CONFIGURAÇÃO OBRIGATÓRIA NO NETLIFY
+1. Abra Project configuration.
+2. Entre em Environment variables.
+3. Crie uma variável chamada ADMIN_INITIAL_PASSWORD.
+4. Coloque sua senha inicial como valor.
+5. Marque como Secret, quando essa opção aparecer.
+6. Faça um novo deploy.
+
+PUBLICAÇÃO RECOMENDADA
+- Coloque esta pasta em um repositório GitHub.
+- No Netlify, escolha Add new project > Import an existing project.
+- Selecione o repositório e publique.
+- O arquivo netlify.toml já configura o site e as funções.
+
+PRIVACIDADE
+O site mostra um aviso simples de coleta. Os IPs aparecem parcialmente no painel.
+Os registros são dados pessoais/técnicos; use apenas para segurança e melhoria do atendimento.
